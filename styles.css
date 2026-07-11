@@ -55,13 +55,17 @@ a {
   position: sticky;
   top: 0;
   z-index: 100;
-  background: rgba(9,26,45,.78);
+  background: linear-gradient(
+    180deg,
+    rgba(9,26,45,.88),
+    rgba(9,26,45,.74)
+);
   backdrop-filter: blur(18px);
   border-bottom: 1px solid var(--line);
 }
 
 .nav-shell {
-  min-height: 78px;
+  min-height: 84px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -85,14 +89,39 @@ a {
 
 .site-nav a {
   text-decoration: none;
-  transition: color .22s ease;
+  opacity: .78;
+  transition: color .25s ease, opacity .25s ease;
+  position: relative;
 }
 
 .site-nav a:hover,
 .site-nav a:focus {
   color: var(--white);
+  opacity: 1;
+}
+.site-nav a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(
+    90deg,
+    var(--engine-gold),
+    var(--engine-blue)
+);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition:
+    transform .42s cubic-bezier(.22,.61,.36,1),
+    opacity .42s ease;
 }
 
+.site-nav a:hover::after,
+.site-nav a:focus::after {
+    transform: scaleX(1);
+}
 .nav-toggle {
   display: none;
   width: 42px;
@@ -113,13 +142,31 @@ a {
 }
 
 .hero {
-  padding: 112px 0 92px;
+    position: relative;
+    padding: 112px 0 92px;
+    overflow: hidden;
 }
-
+.hero::before {
+    content: "";
+    position: absolute;
+    width: 760px;
+    height: 760px;
+    left: -180px;
+    top: -220px;
+    border-radius: 50%;
+    background: radial-gradient(
+        circle,
+        rgba(47,125,225,.34),
+        rgba(47,125,225,.10) 42%,
+        transparent 72%
+    );
+    filter: blur(18px);
+    pointer-events: none;
+}
 .hero-grid {
   display: grid;
   grid-template-columns: minmax(0, 1.15fr) minmax(340px, .85fr);
-  gap: 54px;
+  gap: 72px;
   align-items: center;
 }
 
@@ -193,9 +240,17 @@ h3 {
 .btn-primary {
   background: linear-gradient(135deg, var(--engine-blue), #145cbb);
   color: white;
-  box-shadow: 0 12px 28px rgba(47,125,225,.28);
+  box-shadow:
+    0 14px 34px rgba(47,125,225,.32),
+    0 0 18px rgba(47,125,225,.20);
 }
+.btn-primary:hover {
+    transform: translateY(-3px);
 
+    box-shadow:
+        0 18px 42px rgba(47,125,225,.42),
+        0 0 28px rgba(47,125,225,.30);
+}
 .btn-secondary {
   border: 1px solid rgba(255,255,255,.18);
   color: var(--white);
@@ -203,7 +258,10 @@ h3 {
 }
 
 .btn-secondary:hover {
-  border-color: rgba(255,255,255,.38);
+    transform: translateY(-3px);
+    border-color: rgba(255,255,255,.42);
+    background: rgba(255,255,255,.07);
+    box-shadow: 0 12px 28px rgba(0,0,0,.18);
 }
 
 .engine-panel {
@@ -214,10 +272,23 @@ h3 {
   background:
     linear-gradient(180deg, rgba(255,255,255,.13), rgba(255,255,255,.055)),
     linear-gradient(135deg, rgba(47,125,225,.26), rgba(212,175,55,.10));
-  box-shadow: var(--shadow);
+  box-shadow:
+    0 18px 50px rgba(0,0,0,.35),
+    0 0 40px rgba(47,125,225,.18),
+    inset 0 1px 0 rgba(255,255,255,.12);
+    transition:
+    transform .45s cubic-bezier(.22,.61,.36,1),
+    box-shadow .45s ease;
   overflow: hidden;
 }
+.engine-panel:hover {
+    transform: translateY(-6px);
 
+    box-shadow:
+        0 28px 70px rgba(0,0,0,.42),
+        0 0 60px rgba(47,125,225,.24),
+        inset 0 1px 0 rgba(255,255,255,.14);
+}
 .engine-panel::before {
   content: "";
   position: absolute;
@@ -571,4 +642,52 @@ h3 {
   .footer-bottom {
     flex-direction: column;
   }
+}
+/* ---------- Hero Entrance Animation ---------- */
+
+.hero-animate{
+    opacity:0;
+    transform:translateY(24px);
+    animation:heroFade .8s cubic-bezier(.22,.61,.36,1) forwards;
+}
+
+.hero-animate-1{
+    animation-delay:.15s;
+}
+
+.hero-animate-2{
+    animation-delay:.35s;
+}
+
+@keyframes heroFade{
+
+    from{
+        opacity:0;
+        transform:translateY(24px);
+    }
+
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+
+}
+/* Preserve Engine panel hover after entrance animation */
+
+.engine-panel.hero-animate {
+  transform: none;
+  animation-name: enginePanelFade;
+}
+
+@keyframes enginePanelFade {
+  from {
+    opacity: 0;
+  }
+
+  to {
+    opacity: 1;
+  }
+}
+.engine-panel.hero-animate:hover {
+  transform: translateY(-6px);
 }
