@@ -95,7 +95,8 @@ a {
 }
 
 .site-nav a:hover,
-.site-nav a:focus {
+.site-nav a:focus,
+.site-nav a.active {
   color: var(--white);
   opacity: 1;
 }
@@ -119,8 +120,9 @@ a {
 }
 
 .site-nav a:hover::after,
-.site-nav a:focus::after {
-    transform: scaleX(1);
+.site-nav a:focus::after,
+.site-nav a.active::after {
+  transform: scaleX(1);
 }
 .nav-toggle {
   display: none;
