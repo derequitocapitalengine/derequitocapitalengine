@@ -70,7 +70,7 @@ a {
 
 .brand img {
   display: block;
-  width: 292px;
+  width: 380px;
   max-width: 60vw;
   height: auto;
 }
@@ -498,7 +498,21 @@ h3 {
     max-width: 560px;
   }
 }
+/* ---------- Page Layout ---------- */
 
+.page-hero {
+  padding: 100px 0 70px;
+}
+
+.page-hero-content {
+  max-width: 860px;
+}
+
+.page-intro {
+  font-size: 1.2rem;
+  color: var(--muted);
+  max-width: 760px;
+}
 @media (max-width: 720px) {
   .container {
     width: min(100% - 28px, var(--max-width));
