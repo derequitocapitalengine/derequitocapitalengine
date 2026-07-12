@@ -619,7 +619,9 @@ h3 {
   .site-nav a {
     padding: 11px 14px;
   }
-
+.site-nav:hover a.active:not(:hover)::after {
+  transform: scaleX(0);
+}
   .hero {
     padding: 66px 0 60px;
   }
