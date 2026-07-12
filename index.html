@@ -4,94 +4,208 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Derequito Capital Engine™ | Rules-Based Investment Operating System</title>
-  <meta name="description" content="Derequito Capital Engine™ is a rules-based investment operating system designed to improve the consistency, quality, and discipline of long-term investment decisions." />
+  <meta name="description" content="Derequito Capital Engine™ is a rules-based investment operating system designed to remove emotion and bring discipline to long-term investing." />
+  <link rel="icon" href="favicon.svg" type="image/svg+xml" />
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-  <header class="nav">
-    <div class="brand">Derequito Capital Engine™</div>
-    <nav>
-      <a href="#system">System</a>
-      <a href="#principles">Principles</a>
-      <a href="#roadmap">Roadmap</a>
-      <a class="button small" href="#contact">Join Updates</a>
-    </nav>
+  <header class="site-header">
+    <div class="container nav-shell">
+      <a class="brand" href="#top" aria-label="Derequito Capital Engine home">
+        <img src="assets/brand/logo-primary.svg" alt="Derequito Capital Engine logo" />
+      </a>
+
+      <button class="nav-toggle" aria-label="Toggle navigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+
+      <nav class="site-nav" aria-label="Primary navigation">
+        <a href="#top">Home</a>
+        <a href="pages/about.html">About</a>
+        <a href="#engine">Engine</a>
+        <a href="#principles">Principles</a>
+        <a href="#roadmap">Roadmap</a>
+        <a href="#version">Version</a>
+      </nav>
+    </div>
   </header>
 
-  <main>
-    <section class="hero">
-      <p class="eyebrow">Rules-Based Investment Operating System</p>
-      <h1>Stop guessing. Start investing with a system.</h1>
-      <p class="lead">The Derequito Capital Engine™ is designed to improve the consistency, quality, and discipline of long-term investment decisions through systematic allocation, prudent risk management, and business ownership.</p>
-      <div class="cta-row">
-        <a class="button" href="#contact">Follow the Development</a>
-        <a class="button ghost" href="#system">Explore the System</a>
-      </div>
-      <p class="note">Currently in private production use. Commercial availability is not yet announced.</p>
-    </section>
+  <main id="top">
+    <section class="hero section-reveal">
+      <div class="container hero-grid">
+      <div class="hero-copy hero-animate hero-animate-1">
+        
+          <p class="eyebrow">Rules-Based Investment Operating System</p>
+          <h1>Stop Guessing.<br />Start Investing with a System.</h1>
+          <p class="hero-text">
+            Derequito Capital Engine™ is designed to remove emotion from long-term investing through
+            disciplined allocation, structured decision rules, and repeatable portfolio management.
+          </p>
+          <div class="hero-actions">
+            <a class="btn btn-primary" href="#engine">Explore the Engine</a>
+            <a class="btn btn-secondary" href="#roadmap">View Roadmap</a>
+          </div>
+        </div>
 
-    <section id="system" class="section grid two">
-      <div>
-        <p class="eyebrow">What it does</p>
-        <h2>An operating system for disciplined portfolio decisions.</h2>
-        <p>The engine separates research, portfolio construction, execution, monitoring, and governance into a repeatable workflow. It does not attempt to predict the future. It seeks to make the highest-quality investment decision possible using the best information available today.</p>
-      </div>
-      <div class="card-list">
-        <div class="card"><strong>Signal Generation</strong><span>Ranks opportunities using predefined rules.</span></div>
-        <div class="card"><strong>Capital Allocation</strong><span>Directs cash toward portfolio priorities.</span></div>
-        <div class="card"><strong>Execution Discipline</strong><span>Converts signals into structured trade plans.</span></div>
-        <div class="card"><strong>Governance</strong><span>Documents reviews, thesis quality, and process discipline.</span></div>
-      </div>
-    </section>
-
-    <section id="principles" class="section">
-      <p class="eyebrow">Core philosophy</p>
-      <h2>Built for long-term decision quality.</h2>
-      <div class="principles">
-        <div><h3>Rules over emotions</h3><p>Every investment decision follows predefined system rules rather than fear, greed, or market noise.</p></div>
-        <div><h3>Process over prediction</h3><p>The system reacts to measurable conditions instead of attempting to forecast short-term prices.</p></div>
-        <div><h3>Quality before quantity</h3><p>Capital is allocated only to businesses that satisfy the engine’s investment standards.</p></div>
-        <div><h3>Consistency compounds</h3><p>Repeated high-quality decisions are expected to improve long-term investment outcomes.</p></div>
-      </div>
-    </section>
-
-    <section class="section dark">
-      <blockquote>“I did not build this system to sell it. I built it to build wealth for my family. Commercialization, if it comes, is simply the by-product of fulfilling that purpose.”</blockquote>
-      <p>— Engr. Cyril Ace P. Derequito, Founder, Derequito Capital Engine™</p>
-    </section>
-
-    <section id="roadmap" class="section grid two">
-      <div>
-        <p class="eyebrow">Current status</p>
-        <h2>LIVE v3.3 is the stable production baseline.</h2>
-        <p>The current system includes a production interface, system handbook, technical manual, glossary, performance evidence, business thesis monitoring, and quarterly investment committee review.</p>
-      </div>
-      <div class="timeline">
-        <div><span>LIVE v3.3</span><strong>Production Stable</strong></div>
-        <div><span>Sandbox v4.0</span><strong>Next-generation research and prototyping</strong></div>
-        <div><span>LIVE v4.0</span><strong>Future release after validation and burn-in</strong></div>
+        <div class="engine-panel hero-animate hero-animate-2" aria-label="Capital Engine visual summary">
+          <div class="panel-topline">
+            <span>Capital Engine</span>
+            <strong>v1.1</strong>
+          </div>
+          <div class="signal-card">
+            <span class="signal-label">Decision Mode</span>
+            <strong>Rules-Based</strong>
+          </div>
+          <div class="metrics-grid">
+            <div><span>Focus</span><strong>Discipline</strong></div>
+            <div><span>Style</span><strong>Long-Term</strong></div>
+            <div><span>Method</span><strong>Systematic</strong></div>
+            <div><span>Risk</span><strong>Controlled</strong></div>
+          </div>
+          <div class="progress-line"><span></span></div>
+        </div>
       </div>
     </section>
 
-    <section id="contact" class="section contact">
-      <p class="eyebrow">Online imprint</p>
-      <h2>Be notified when updates are available.</h2>
-      <p>This page is a placeholder for future announcements, documentation previews, and development updates.</p>
-      <form onsubmit="event.preventDefault(); showMessage();">
-        <input type="email" placeholder="Email address" required />
-        <button class="button" type="submit">Join Updates</button>
-      </form>
-      <p id="form-message" class="form-message"></p>
-      <p class="disclaimer">Information on this website is for educational and informational purposes only. It is not investment advice, financial advice, or an offer to sell any product or service.</p>
+    <section id="engine" class="section section-reveal">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">What the Engine Does</p>
+          <h2>Disciplined investing, structured into a repeatable operating system.</h2>
+        </div>
+
+        <div class="feature-grid">
+          <article class="feature-card">
+            <span class="feature-icon">01</span>
+            <h3>Opportunity Ranking</h3>
+            <p>Identifies higher-priority opportunities within an approved investment universe.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">02</span>
+            <h3>Capital Allocation</h3>
+            <p>Guides deployment decisions using a structured capital planning process.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">03</span>
+            <h3>Position Sizing</h3>
+            <p>Helps determine disciplined exposure instead of relying on instinct or emotion.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">04</span>
+            <h3>Portfolio Health</h3>
+            <p>Monitors portfolio balance, concentration, and long-term structural quality.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">05</span>
+            <h3>Risk Management</h3>
+            <p>Supports consistent risk control through predefined rules and review processes.</p>
+          </article>
+          <article class="feature-card">
+            <span class="feature-icon">06</span>
+            <h3>Business Thesis Reviews</h3>
+            <p>Encourages annual company-level review before capital remains permanently committed.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="principles" class="section split-section section-reveal">
+      <div class="container split-grid">
+        <div>
+          <p class="eyebrow">Why It Exists</p>
+          <h2>Long-term investors need more than conviction. They need process.</h2>
+        </div>
+        <div class="copy-block">
+          <p>
+            Most investors know discipline matters. Fewer have a system that tells them what to buy,
+            how much to allocate, when to rebalance, and when to step back.
+          </p>
+          <p>
+            The Derequito Capital Engine™ exists to convert investing principles into an operating
+            framework: structured, documented, and continuously improved.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="roadmap" class="section section-reveal">
+      <div class="container">
+        <div class="section-heading">
+          <p class="eyebrow">Public Roadmap</p>
+          <h2>Built gradually, documented professionally.</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item complete">
+            <span>v1.0</span>
+            <h3>Initial GitHub Pages Deployment</h3>
+            <p>Foundation site released and deployment pipeline verified.</p>
+          </div>
+          <div class="timeline-item active">
+            <span>v1.1</span>
+            <h3>Brand Foundation</h3>
+            <p>Premium homepage, brand system, visual language, and release documentation.</p>
+          </div>
+          <div class="timeline-item">
+            <span>v1.2</span>
+            <h3>Foundation Pages</h3>
+            <p>About, Investment Philosophy, Core Principles, and Roadmap pages.</p>
+          </div>
+          <div class="timeline-item">
+            <span>v1.3</span>
+            <h3>Documentation Portal</h3>
+            <p>Version history, FAQ, changelog, architecture, and user guide foundation.</p>
+          </div>
+          <div class="timeline-item">
+            <span>v2.0+</span>
+            <h3>Product Website</h3>
+            <p>Commercial-ready presentation and deeper explanation of the engine workflow.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="version" class="section cta-section section-reveal">
+      <div class="container cta-card">
+        <p class="eyebrow">Built for Long-Term Discipline</p>
+        <h2>The public face of a rules-based investment platform.</h2>
+        <p>
+          This website will evolve alongside the engine: from homepage, to documentation portal,
+          to product platform.
+        </p>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <span>© 2026 Derequito Capital Engine™</span>
-    <span>Configure once. Execute consistently.</span>
+  <footer id="footer" class="site-footer">
+    <div class="container footer-grid">
+      <div>
+        <img src="assets/brand/logo-light.svg" alt="Derequito Capital Engine logo" class="footer-logo" />
+        <p>Rules-based investment operating system.</p>
+      </div>
+      <div>
+        <strong>Website Version</strong>
+        <p>
+Version 1.1<br>
+Release Candidate 1 (RC1)<br>
+Build 2026.07.12
+</p>
+      </div>
+      <div>
+        <strong>Disclaimer</strong>
+
+<p>For informational and documentation purposes only. Not financial advice.</p>
+
+<p>Last Updated: July 12, 2026</p>
+      </div>
+    </div>
+    <div class="container footer-bottom">
+      <p>© 2026 Derequito Capital Engine™. All rights reserved.</p>
+      <p>Built with HTML • CSS • JavaScript</p>
+    </div>
   </footer>
 
   <script src="script.js"></script>

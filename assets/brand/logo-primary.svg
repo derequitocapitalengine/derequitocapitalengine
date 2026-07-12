@@ -1,11 +1,29 @@
-<svg width="640" height="132" viewBox="0 0 640 132" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title desc">
-<title id="title">Derequito Capital Engine</title>
-<desc id="desc">Derequito Capital Engine wordmark with D icon</desc>
-<rect width="640" height="132" rx="28" fill="#06111F"/>
-<rect x="24" y="24" width="84" height="84" rx="22" fill="#0D2036" stroke="#2F7DE1" stroke-width="3"/>
-<text x="54" y="82" text-anchor="middle" font-family="Inter, Arial, sans-serif" font-size="54" font-weight="800" fill="#FFFFFF">D</text>
-<text x="130" y="58" font-family="Inter, Arial, sans-serif" font-size="31" font-weight="800" letter-spacing="2" fill="#FFFFFF">DEREQUITO</text>
-<text x="130" y="91" font-family="Inter, Arial, sans-serif" font-size="22" font-weight="800" letter-spacing="4" fill="#2F7DE1">CAPITAL ENGINE™</text>
-<rect x="130" y="104" width="170" height="4" rx="2" fill="#D4AF37"/>
-<rect x="310" y="104" width="58" height="4" rx="2" fill="#2F7DE1"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="760" height="132" viewBox="0 0 760 132" role="img" aria-labelledby="title desc">
+  <title id="title">Derequito Capital Engine</title>
+  <desc id="desc">Balanced Derequito Capital Engine wordmark with D icon</desc>
+
+  <rect width="760" height="132" rx="28" fill="#06111F"/>
+
+  <rect x="24" y="24" width="84" height="84" rx="22"
+        fill="#0D2036" stroke="#2F7DE1" stroke-width="3"/>
+  <text x="66" y="82" text-anchor="middle"
+        font-family="Inter, Arial, sans-serif"
+        font-size="54" font-weight="800" fill="#FFFFFF">D</text>
+
+  <g font-family="Inter, Arial, sans-serif" font-weight="800">
+    <text x="142" y="58"
+          font-size="31"
+          fill="#FFFFFF"
+          textLength="360"
+          lengthAdjust="spacing">DEREQUITO</text>
+
+    <text x="142" y="93"
+          font-size="28"
+          fill="#2F7DE1"
+          textLength="360"
+          lengthAdjust="spacing">CAPITAL ENGINE™</text>
+  </g>
+
+  <rect x="142" y="106" width="316" height="4" rx="2" fill="#D4AF37"/>
+  <rect x="466" y="106" width="36" height="4" rx="2" fill="#2F7DE1"/>
 </svg>
