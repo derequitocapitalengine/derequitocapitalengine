@@ -496,7 +496,39 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 .cta-card p {
   max-width: 760px;
 }
+.founder-quote-section {
+  padding-top: 56px;
+  padding-bottom: 56px;
+}
 
+.founder-quote {
+  margin: 0;
+  padding: clamp(36px, 7vw, 84px);
+  border: 1px solid var(--line);
+  border-radius: var(--radius-lg);
+  background:
+    radial-gradient(circle at 50% 0%, rgba(47,125,225,.20), transparent 48%),
+    linear-gradient(135deg, rgba(255,255,255,.08), rgba(255,255,255,.025));
+  box-shadow: var(--shadow);
+  text-align: center;
+}
+
+.founder-quote p {
+  max-width: 980px;
+  margin: 0 auto;
+  font-size: clamp(26px, 3.8vw, 46px);
+  line-height: 1.08;
+  font-weight: 750;
+  letter-spacing: -0.035em;
+}
+
+.founder-quote footer {
+  margin-top: 32px;
+  font-size: clamp(14px, 1.7vw, 18px);
+  line-height: 1.5;
+  font-style: normal;
+  color: var(--text-muted);
+}
 .site-footer {
   border-top: 1px solid var(--line);
   padding: 46px 0 26px;
