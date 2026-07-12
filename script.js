@@ -18,7 +18,14 @@ if (navToggle && siteNav) {
     });
   });
 }
-
+document.addEventListener("keydown", (event) => {
+  if (event.key === "Escape" && siteNav.classList.contains("is-open")) {
+    siteNav.classList.remove("is-open");
+    document.body.classList.remove("nav-open");
+    navToggle.setAttribute("aria-expanded", "false");
+    navToggle.focus();
+  }
+});
 const revealItems = document.querySelectorAll(".section-reveal");
 
 if ("IntersectionObserver" in window) {
