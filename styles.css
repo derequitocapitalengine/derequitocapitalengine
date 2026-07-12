@@ -728,3 +728,25 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 .engine-panel.hero-animate:hover {
   transform: translateY(-6px);
 }
+
+
+.engine-showcase-card img {
+  max-width: 100%;
+  object-fit: contain;
+}
+.engine-showcase-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: rgba(255, 255, 255, .96);
+}
+.engine-showcase-card--featured {
+  grid-column: auto;
+}
+
+.engine-showcase-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: contain;
+  background: rgba(255, 255, 255, .96);
+}
