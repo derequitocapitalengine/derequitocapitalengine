@@ -845,3 +845,35 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   text-decoration: underline;
   text-underline-offset: 4px;
 }
+.faq-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.faq-list details {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface);
+  padding: 18px 20px;
+}
+
+.faq-list summary {
+  cursor: pointer;
+  font-weight: 750;
+  color: var(--text);
+}
+
+.faq-list summary::marker {
+  color: var(--engine-blue-soft);
+}
+
+.faq-list details[open] summary {
+  margin-bottom: 12px;
+}
+
+.faq-list p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
+}
