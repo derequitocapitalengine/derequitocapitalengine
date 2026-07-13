@@ -804,3 +804,30 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 .site-nav:hover a.active:not(:hover)::after {
   transform: scaleX(0);
 }
+.engine-clarity-card {
+  max-width: 960px;
+  margin: 28px 0 36px;
+  padding: 24px 26px;
+  border: 1px solid rgba(120, 160, 255, 0.2);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.045);
+  box-shadow:
+    0 16px 34px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.07);
+}
+
+.engine-clarity-card p {
+  margin: 0;
+  max-width: 900px;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.engine-clarity-card p + p {
+  margin-top: 14px;
+}
+
+.engine-clarity-card p:first-child {
+  color: var(--text);
+  font-weight: 650;
+}
