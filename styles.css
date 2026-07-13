@@ -835,3 +835,14 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   padding-top: 14px;
   border-top: 1px solid rgba(255, 255, 255, 0.1);
 }
+.engine-panel-link {
+  display: inline-block;
+  margin-top: 14px;
+  font-weight: 650;
+  text-decoration: none;
+}
+.engine-panel-link:hover,
+.engine-panel-link:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
