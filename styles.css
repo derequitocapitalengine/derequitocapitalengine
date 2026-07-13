@@ -655,9 +655,8 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   .site-nav a {
     padding: 11px 14px;
   }
-.site-nav:hover a.active:not(:hover)::after {
-  transform: scaleX(0);
-}
+
+
   .hero {
     padding: 66px 0 60px;
   }
@@ -801,4 +800,7 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   filter:
     brightness(1.08)
     drop-shadow(0 0 10px rgba(72, 137, 255, 0.35));
+}
+.site-nav:hover a.active:not(:hover)::after {
+  transform: scaleX(0);
 }
