@@ -753,7 +753,7 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   background: rgba(255, 255, 255, .96);
 }
 .engine-sample-note {
-  max-width: 860px;
+  max-width: none;
   margin-top: 18px;
   padding: 18px 22px;
   background: rgba(255, 255, 255, 0.05);
