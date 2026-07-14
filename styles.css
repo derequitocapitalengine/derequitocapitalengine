@@ -458,11 +458,10 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 
 .timeline-item span {
-  position: absolute;
-  left: 24px;
-  top: 24px;
+  display: block;
+  margin-bottom: 10px;
   color: var(--engine-blue-soft);
-  font-weight: 900;
+  font-weight: 800;
 }
 
 .timeline-item.complete span {
@@ -803,4 +802,78 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.05);
 }
 .site-nav:hover a.active:not(:hover)::after {
   transform: scaleX(0);
+}
+.engine-clarity-card {
+  max-width: 960px;
+  margin: 28px 0 36px;
+  padding: 24px 26px;
+  border: 1px solid rgba(120, 160, 255, 0.2);
+  border-radius: 22px;
+  background: rgba(255, 255, 255, 0.045);
+  box-shadow:
+    0 16px 34px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.07);
+}
+
+.engine-clarity-card p {
+  margin: 0;
+  max-width: 900px;
+  color: var(--muted);
+  line-height: 1.75;
+}
+
+.engine-clarity-card p + p {
+  margin-top: 14px;
+}
+
+.engine-clarity-card p:first-child {
+  color: var(--text);
+  font-weight: 650;
+}
+.engine-example {
+  padding-top: 14px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+.engine-panel-link {
+  display: inline-block;
+  margin-top: 14px;
+  font-weight: 650;
+  text-decoration: none;
+}
+.engine-panel-link:hover,
+.engine-panel-link:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 4px;
+}
+.faq-list {
+  display: grid;
+  gap: 14px;
+  margin-top: 28px;
+}
+
+.faq-list details {
+  border: 1px solid var(--line);
+  border-radius: 18px;
+  background: var(--surface);
+  padding: 18px 20px;
+}
+
+.faq-list summary {
+  cursor: pointer;
+  font-weight: 750;
+  color: var(--text);
+}
+
+.faq-list summary::marker {
+  color: var(--engine-blue-soft);
+}
+
+.faq-list details[open] summary {
+  margin-bottom: 12px;
+}
+
+.faq-list p {
+  margin: 0;
+  color: var(--muted);
+  line-height: 1.7;
 }
