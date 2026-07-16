@@ -222,7 +222,11 @@ h3 {
   gap: 14px;
   margin-top: 34px;
 }
-
+.hero-actions .btn {
+  min-width: 180px;
+  justify-content: center;
+  text-align: center;
+}
 .btn {
   display: inline-flex;
   align-items: center;
