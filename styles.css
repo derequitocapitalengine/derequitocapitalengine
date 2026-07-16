@@ -405,6 +405,18 @@ h3 {
 #private-access .section-heading > p:last-child {
   max-width: none;
 }
+#see-the-engine .section-heading {
+  max-width: none;
+}
+
+#see-the-engine .section-heading .eyebrow,
+#see-the-engine .section-heading h2 {
+  max-width: 780px;
+}
+
+#see-the-engine .section-heading > p:last-child {
+  max-width: none;
+}
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
