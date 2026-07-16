@@ -680,7 +680,18 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   .feature-grid {
   grid-template-columns: 1fr;
 }
+.page-hero-content,
+.copy-block,
+.section-heading,
+.page-section .container > p {
+  max-width: none;
+  width: 100%;
+}
 
+.page-hero-content p,
+.copy-block p {
+  max-width: none;
+}
   .engine-panel {
     max-width: 560px;
   }
@@ -704,6 +715,15 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   .container {
     width: min(100% - 28px, var(--max-width));
   }
+  .page-hero-content,
+.copy-block,
+.section-heading,
+.page-section .container > p,
+.page-hero-content p,
+.copy-block p {
+  max-width: none;
+  width: 100%;
+}
 .hero-actions {
   display: grid;
   grid-template-columns: 1fr;
