@@ -1,6 +1,22 @@
 # Derequito Capital Engine™ Website
 ## Version 1.1 — Release Candidate 2
+## Website v1.1 — Private Demo and Controlled Access Update
 
+### Added
+- Replaced the general update request with a *Request a Demo* call to action.
+- Added a *Private Access* section explaining the guided demonstration, edition confirmation, future purchase and onboarding, and direct delivery process.
+- Added FAQ guidance covering trial downloads, delivery, sharing restrictions, and long-term use.
+
+### Changed
+- Clarified that the working spreadsheet is not currently offered as a public download.
+- Clarified that commercial access is intended to become available in the future through a guided process.
+- Standardized hero button sizing across desktop and mobile.
+
+### Access Policy
+- The working spreadsheet remains private.
+- No public trial or direct-download beta is offered.
+- Demonstrations use protected or synthetic portfolio examples.
+- Future delivery is intended only for approved clients after purchase and onboarding.
 *Build:* 2026.07.14
 
 ### Summary
