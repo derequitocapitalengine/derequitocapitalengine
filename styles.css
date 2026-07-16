@@ -392,6 +392,19 @@ h3 {
   margin-bottom: 38px;
 }
 
+
+#private-access .section-heading {
+  max-width: none;
+}
+
+#private-access .section-heading .eyebrow,
+#private-access .section-heading h2 {
+  max-width: 780px;
+}
+
+#private-access .section-heading > p:last-child {
+  max-width: none;
+}
 .feature-grid {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
