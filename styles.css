@@ -433,14 +433,12 @@ h3 {
 }
 
 .clean-start-card {
-  margin: 0;
-  padding: 16px;
+  margin: 0 0 28px;
+  padding: 14px;
   border: 1px solid var(--line);
   border-radius: var(--radius-md);
   background: var(--surface);
   overflow: hidden;
-  display: flex;
-flex-direction: column;
 }
 
 .clean-start-card-featured {
@@ -450,20 +448,17 @@ flex-direction: column;
 .clean-start-card img {
   display: block;
   width: 100%;
-  max-height: 420px;
+  height: auto;
+  max-height: none;
   object-fit: contain;
   border-radius: 12px;
   background: #ffffff;
 }
-clean-start-card:not(.clean-start-card-featured) img {
-  height: 300px;
-  max-height: none;
-}
+
 .clean-start-card figcaption {
-  margin-top: auto;
-padding-top: 14px;
+  margin-top: 14px;
+  padding: 0 4px 4px;
   color: var(--muted);
-  min-height: 96px;
 }
 
 .clean-start-card figcaption strong {
@@ -889,7 +884,12 @@ border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   aspect-ratio: 16 / 9;
   object-fit: contain;
 }
-
+engine-showcase-card img.deployment-detail-image {
+  aspect-ratio: auto;
+  height: auto;
+  max-height: none;
+  object-fit: contain;
+}
 @media (min-width: 1100px) {
   .engine-showcase {
     grid-template-columns: repeat(2, minmax(0, 1fr));
