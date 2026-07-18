@@ -1230,4 +1230,37 @@ engine-showcase-card img.deployment-detail-image {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
+.engine-sample-note {
+  position: relative;
+  padding: 18px 22px 18px 58px;
+  border: 1px solid rgba(245, 201, 78, 0.55);
+  border-left: 5px solid #f5c94e;
+  border-radius: 16px;
+  background:
+    linear-gradient(
+      135deg,
+      rgba(245, 201, 78, 0.14),
+      rgba(34, 76, 111, 0.72)
+    );
+  color: #fff4bf;
+  font-weight: 800;
+  letter-spacing: 0.02em;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.14);
+}
 
+.engine-sample-note::before {
+  content: "!";
+  position: absolute;
+  left: 20px;
+  top: 50%;
+  width: 24px;
+  height: 24px;
+  display: grid;
+  place-items: center;
+  transform: translateY(-50%);
+  border: 2px solid #f5c94e;
+  border-radius: 50%;
+  color: #f5c94e;
+  font-size: 0.9rem;
+  font-weight: 900;
+}
