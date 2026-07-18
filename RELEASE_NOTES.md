@@ -1,4 +1,19 @@
 # Derequito Capital Engine™ Website
+## Technical Framework Clarification
+
+- Added a new Technical Condition Layer section to the Engine page.
+- Clarified that the Derequito Capital Engine does not rely on MA200 alone.
+- Documented the use of trend strength, trend confirmation, directional bias,
+  smart entry thresholds, soft-pass conditions, entry triggers, exit triggers,
+  and trim-policy conditions.
+- Added a visual decision flow from market-price behavior through portfolio
+  controls to final action.
+- Expanded the FAQ explanation of the indicators and technical conditions used
+  by the Engine.
+- Updated earlier Engine-page language to remove the outdated description of
+  MA200 as the primary market indicator.
+- Improved hero-button hierarchy and responsive behavior for the new technical
+  framework section.
 ## Version 1.1 — Release Candidate 2
 ## Website v1.1 — Private Demo and Controlled Access Update
 

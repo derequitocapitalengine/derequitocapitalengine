@@ -98,13 +98,20 @@
   automatically.
 </p>
 <p>
-  The Engine is portfolio-driven, not indicator-heavy. Its primary market
-  indicator is the 200-day moving average, while most decisions are based on
-  portfolio data such as current holdings, portfolio weights, available cash,
-  target allocations, position size, concentration, execution status, and the
-  approved investment universe. It also monitors portfolio-structure roles,
-  including the liquidity buffer, growth engine, harvest sources, and income
-  stabilizer.
+  The Engine is portfolio-driven rather than indicator-heavy. It does not rely
+  on a single technical indicator such as the 200-day moving average. Instead,
+  MA200 forms part of a broader technical-condition framework that also
+  evaluates trend strength, trend confirmation, directional bias, smart entry
+  thresholds, soft-pass conditions, entry triggers, exit triggers, and
+  trim-policy conditions.
+</p>
+
+<p>
+  These technical conditions are combined with portfolio data such as current
+  holdings, portfolio weights, available cash, target allocations, position
+  size, concentration, execution status, and the approved investment universe.
+  The Engine also monitors portfolio-structure roles, including the liquidity
+  buffer, growth engine, harvest sources, and income stabilizer.
 </p>
   <p>
     It is not a broker, bank, fund, robo-advisor, or automated trading bot.
@@ -298,6 +305,110 @@
   </div>
 </div>
 </section>
+<section id="technical-framework" class="section section-reveal">
+  <div class="container">
+    <div class="section-heading">
+      <p class="eyebrow">Technical Condition Layer</p>
+
+      <h2>
+        A layered technical framework—
+        <br>
+        not an MA200-only system.
+      </h2>
+
+      <p class="section-intro">
+        The Derequito Capital Engine does not rely on a single technical
+        indicator such as the 200-day moving average. MA200 is only one part
+        of a broader rules-based framework built into the engine.
+      </p>
+    </div>
+
+    <div class="split-grid technical-framework-grid">
+
+  <div class="copy-block technical-evaluation-card">
+    <h3>What the engine evaluates</h3>
+
+    <div class="technical-feature-grid">
+      <span>Trend strength</span>
+      <span>Trend confirmation</span>
+      <span>Directional trend bias</span>
+      <span>MA200 filter status</span>
+      <span>Smart entry thresholds</span>
+      <span>Soft-pass conditions</span>
+      <span>Entry triggers</span>
+      <span>Exit triggers</span>
+      <span>Trim-policy conditions</span>
+    </div>
+  </div>
+
+  <div class="copy-block technical-translation-card">
+    <h3>How conditions are translated</h3>
+
+    <p>
+      These conditions are not always displayed in the same form as the
+      familiar indicators shown on brokerage platforms. Instead, the engine
+      translates market-price behavior into practical operating states.
+    </p>
+
+    <div class="technical-state-badges">
+      <span>STRONG UP</span>
+      <span>UP</span>
+      <span>DOWN</span>
+      <span>CONFIRMED</span>
+      <span>WEAK</span>
+      <span>BUY</span>
+      <span>WAIT</span>
+      <span>TRIM</span>
+    </div>
+
+    <p>
+      The purpose is not to overwhelm users with charts and indicators.
+      The purpose is to convert market conditions into clear, repeatable
+      decision rules.
+    </p>
+  </div>
+
+</div>
+
+    <div class="technical-framework-flow" aria-label="Technical framework flow">
+      <div class="technical-flow-step">Market Price Behavior</div>
+      <span class="technical-flow-arrow">→</span>
+
+      <div class="technical-flow-step">
+        Trend Strength and Confirmation
+      </div>
+      <span class="technical-flow-arrow">→</span>
+
+      <div class="technical-flow-step">
+        Entry, Exit and Trim Conditions
+      </div>
+      <span class="technical-flow-arrow">→</span>
+
+      <div class="technical-flow-step">
+        Valuation and Portfolio Controls
+      </div>
+      <span class="technical-flow-arrow">→</span>
+
+      <div class="technical-flow-step technical-flow-final">
+        Final Action
+      </div>
+    </div>
+
+    <div class="copy-block technical-framework-controls">
+      <p>
+        Technical conditions are never used in isolation. Final outputs remain
+        subject to valuation, portfolio allocation, position sizing, available
+        cash, buy and trim eligibility, business-thesis controls,
+        portfolio-health rules, and final execution filters.
+      </p>
+    </div>
+
+    <blockquote class="technical-framework-quote">
+      The engine does not use technical indicators to predict the market.
+      It uses technical conditions to improve decision discipline.
+    </blockquote>
+  </div>
+</section>
     <section id="principles" class="section split-section section-reveal">
       <div class="container split-grid">
         <div>
@@ -489,14 +600,40 @@
 
       <details>
         <summary>What indicators does the Engine use?</summary>
-        <p>
-  The Engine is portfolio-driven rather than indicator-heavy. Its primary
-  market indicator is the 200-day moving average, while most decisions rely on
-  portfolio weights, available cash, target allocations, position limits,
-  concentration, execution status, and the approved investment universe. It
-  also monitors portfolio-structure roles, including the liquidity buffer,
-  growth engine, harvest sources, and income stabilizer.
-</p>
+        
+
+  <div class="faq-answer">
+    <p>
+      The Derequito Capital Engine is portfolio-driven rather than
+      indicator-heavy. It does not rely on a single technical indicator such
+      as the 200-day moving average.
+    </p>
+
+    <p>
+      MA200 is only one part of a broader rules-based technical framework.
+      The Engine also evaluates trend strength, trend confirmation,
+      directional trend bias, smart entry thresholds, soft-pass conditions,
+      entry triggers, exit triggers, and trim-policy conditions.
+    </p>
+
+    <p>
+      These conditions are not always displayed in the same form as the
+      familiar indicators shown on brokerage platforms. Instead, the Engine
+      translates market-price behavior into practical operating states such as
+      <strong>
+        STRONG UP, UP, DOWN, CONFIRMED, WEAK, BUY, WAIT, and TRIM.
+      </strong>
+    </p>
+
+    <p>
+      Technical conditions are not used alone. Final outputs also remain
+      subject to valuation, portfolio weights, available cash, target
+      allocations, position limits, concentration, execution status,
+      business-thesis controls, portfolio-health rules, and the approved
+      investment universe.
+    </p>
+  </div>
+</details>
       </details>
 
       <details>
