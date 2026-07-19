@@ -448,9 +448,9 @@ h3 {
 .clean-start-card img {
   display: block;
   width: 100%;
-  height: 220px;
-object-fit: contain;
+  height: auto;
   max-height: none;
+  object-fit: contain;
   border-radius: 12px;
   background: #ffffff;
 }
