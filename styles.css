@@ -454,7 +454,12 @@ h3 {
   border-radius: 12px;
   background: #ffffff;
 }
-
+@media (min-width: 721px) {
+  .clean-start-card-paired img {
+    height: 220px;
+    object-fit: contain;
+  }
+}
 .clean-start-card figcaption {
   margin-top: 14px;
   padding: 0 4px 4px;
