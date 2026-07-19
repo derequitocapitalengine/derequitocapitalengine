@@ -459,13 +459,18 @@ h3 {
     height: 220px;
     object-fit: contain;
   }
-  @media (max-width: 720px) {
-  .clean-start-card-paired img {
-    height: 118px;
+}
+
+@media (max-width: 720px) {
+  #see-the-engine .clean-start-card.clean-start-card-paired > img {
+    width: 100%;
+    height: 118px !important;
+    min-height: 118px;
+    max-height: 118px;
     object-fit: contain;
   }
 }
-}
+
 .clean-start-card figcaption {
   margin-top: 14px;
   padding: 0 4px 4px;
