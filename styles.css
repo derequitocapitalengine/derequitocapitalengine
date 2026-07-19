@@ -451,7 +451,6 @@ h3 {
   height: 220px;
 object-fit: contain;
   max-height: none;
-  object-fit: contain;
   border-radius: 12px;
   background: #ffffff;
 }
