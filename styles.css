@@ -459,6 +459,12 @@ h3 {
     height: 220px;
     object-fit: contain;
   }
+  @media (max-width: 720px) {
+  .clean-start-card-paired img {
+    height: 118px;
+    object-fit: contain;
+  }
+}
 }
 .clean-start-card figcaption {
   margin-top: 14px;
