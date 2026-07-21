@@ -31,7 +31,7 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
     event.preventDefault();
 
     const goToTarget = (behavior) => {
-      const offset = window.innerWidth <= 720 ? 90 : 110;
+      const offset = window.innerWidth <= 720 ? 80 : 90;
       const targetPosition =
         target.getBoundingClientRect().top + window.scrollY - offset;
 
@@ -41,11 +41,21 @@ document.querySelectorAll('a[href^="#"]').forEach((link) => {
       });
     };
 
-    goToTarget("smooth");
+    const revealSection = target.closest(".section-reveal");
 
-    window.setTimeout(() => {
-      goToTarget("auto");
-    }, 600);
+if (revealSection) {
+  revealSection.classList.add("is-visible");
+}
+
+window.requestAnimationFrame(() => {
+  window.requestAnimationFrame(() => {
+    goToTarget("smooth");
+  });
+});
+
+window.setTimeout(() => {
+  goToTarget("auto");
+}, 900);
 
     window.history.pushState(null, "", targetId);
   });
