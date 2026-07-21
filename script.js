@@ -18,6 +18,38 @@ if (navToggle && siteNav) {
     });
   });
 }
+document.querySelectorAll('a[href^="#"]').forEach((link) => {
+  link.addEventListener("click", (event) => {
+    const targetId = link.getAttribute("href");
+
+    if (!targetId || targetId === "#") return;
+
+    const target = document.querySelector(targetId);
+
+    if (!target) return;
+
+    event.preventDefault();
+
+    const goToTarget = (behavior) => {
+      const offset = window.innerWidth <= 720 ? 90 : 110;
+      const targetPosition =
+        target.getBoundingClientRect().top + window.scrollY - offset;
+
+      window.scrollTo({
+        top: targetPosition,
+        behavior
+      });
+    };
+
+    goToTarget("smooth");
+
+    window.setTimeout(() => {
+      goToTarget("auto");
+    }, 600);
+
+    window.history.pushState(null, "", targetId);
+  });
+});
 document.addEventListener("keydown", (event) => {
   if (event.key === "Escape" && siteNav.classList.contains("is-open")) {
     siteNav.classList.remove("is-open");
