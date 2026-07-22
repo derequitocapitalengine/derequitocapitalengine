@@ -1347,3 +1347,30 @@ engine-showcase-card img.deployment-detail-image {
     grid-template-columns: 1fr;
   }
 }
+/* ==========================================
+   Capital Deployment Note
+========================================== */
+
+.capital-deployment-note {
+  max-width: 820px;
+  margin: 2.25rem auto 0;
+  padding: 1.4rem 1.5rem 0;
+  text-align: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.12);
+}
+
+.capital-deployment-note__headline {
+  margin: 0;
+  font-size: 1.2rem;
+  font-weight: 700;
+  line-height: 1.6;
+  color: var(--text-primary);
+}
+
+.capital-deployment-note__text {
+  max-width: 700px;
+  margin: 0.9rem auto 0;
+  font-size: 0.96rem;
+  line-height: 1.75;
+  color: var(--text-secondary);
+}
