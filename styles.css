@@ -30,7 +30,9 @@ html {
 section[id] {
   scroll-margin-top: 90px;
 }
-
+html {
+  background-color: #0b1d33;
+}
 body {
   margin: 0;
   font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
