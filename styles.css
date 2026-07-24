@@ -30,6 +30,9 @@ html {
 section[id] {
   scroll-margin-top: 90px;
 }
+#website-version {
+  scroll-margin-top: 110px;
+}
 html {
   background-color: #0b1d33;
 }
